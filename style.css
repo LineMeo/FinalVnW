@@ -12,7 +12,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;
     width: 100%;
     position: sticky;   
     top: 0; 
@@ -51,7 +50,6 @@ header .menu li:hover{
 }
 
 main {
-    max-width: 1600px;
     width: 100%;
 }
 
@@ -130,7 +128,6 @@ main {
 }
 
  footer{
-    max-width: 1600px;
     width: 100%;
     display:flex;
     align-items: center;
@@ -239,7 +236,7 @@ main {
      }
      
      footer .mediasBox img{
-        margin-right: 20px;
+        margin-right: 5px;
      }
 
      footer .copy{
@@ -262,5 +259,15 @@ main {
         margin-left: 100px;
         cursor: pointer;
      }
+}
 
+@media(max-width:400px) {
+    footer .mediasBox{
+        flex-wrap: wrap;
+    }
+    
+    footer .mediasBox img{
+        margin-left: 20px;
+        align-items:center;
+     }
 }
