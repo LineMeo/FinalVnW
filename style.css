@@ -13,6 +13,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 50px;
     position: sticky;   
     top: 0; 
     background-color: #F6F6F6;
@@ -27,7 +28,7 @@ header h1{
 }
 
 header .menu{
-    width: 70%;
+    width: 80%;
 }
 
 header .menu ul {
@@ -39,6 +40,7 @@ header .menu ul {
 }
 
 header .menu li {
+    width: 10%;
     font-size: 20px;
     font-weight: 300;
 }
@@ -173,7 +175,7 @@ main {
     header .menuHamb{
         display: initial;
         width:150px;
-        height: 40px;
+        height: 50px;
         background-color: black;
         cursor: pointer;
         display:flex;
@@ -236,7 +238,7 @@ main {
      }
      
      footer .mediasBox img{
-        margin-right: 5px;
+        margin-left: 50px;
      }
 
      footer .copy{
@@ -256,7 +258,7 @@ main {
         font-size: 20px;
         width: 100px;
         height: 30px;
-        margin-left: 100px;
+        margin-left: 200px;
         cursor: pointer;
      }
 }
@@ -270,4 +272,34 @@ main {
         margin-left: 20px;
         align-items:center;
      }
+
+     footer .back button{
+        margin-left: 100px;
+     }
+
+}
+
+@media(max-width:300px) {
+    header h1{
+        padding-right: 10px;
+    }
+
+    .secondSection .firstBox img, 
+    .secondSection .secondBox img,
+    .secondSection .thirdBox img{
+        width: 250px;
+    }
+
+    footer .mediasBox img{
+        margin-left: 8px;
+     }
+
+     footer .copy p{
+        font-size: 13px;
+     }
+
+     footer .back button{
+        margin-left: 50px;
+     }
+
 }
